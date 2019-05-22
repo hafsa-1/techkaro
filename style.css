@@ -13,6 +13,8 @@ header{
     height:100px;
     background-color:black;
     display:flex;
+    justify-content: space-between;
+    position:sticky;
 }
 
 .image{
@@ -20,19 +22,17 @@ header{
     height:75px;
     padding-top:1%;
     padding-left:3%;
-    display:flex;
 }
 ul{
-    display:flex;
     padding-top:30px;
     list-style:none;
+    padding-right:20px;
 }
 li{
-    display:none;
-    display:flex;
+    
     color:white;
-    align-items:flex-start;
-    padding-left:20%;
+    display: inline;
+    padding-left:30px;
     font-size:1.5em;
 }
 
@@ -52,14 +52,14 @@ main{
 .pera{
     height:75px;
     width:580px;
-    display:flex;
+    
     justify-content: center;
     padding-top:1.4em;
     font-size:1.2em;
     border-top:solid black 2px;
     border-bottom:solid black 2px;
 }
-main div button{
+.join-now{
     width:300px;
     height:60px;
     font-size:1.5em;
@@ -88,9 +88,12 @@ h2{
 .html{
     width:300px;
     height:300px;
-    background-color: #e78790;
     text-align: center;
 }
+figure i:hover{
+color:#e78790;
+}
+
 
 figure{
     font-size:5em;
@@ -103,17 +106,22 @@ figcaption,p{
 
 article{
     width:100%;
-    height:700px;
-    background-color: aquamarine;
+    height:900px;
     background-image: url("images/floral.png");
+    background-color:#ddceb4;
+    justify-content: center;
+}
+.inner{
+    width:100%;
+    height:250px;
     display:flex;
     justify-content: center;
 }
 
 #upper{
-    width:500px;
-    height:400px;
-    padding-top:3%;    
+    width:50%;
+    height:250px;
+    padding-top:3%;  
 }
 
 #upper h2{
@@ -129,32 +137,79 @@ article{
     border-top:solid black 2px;
     border-bottom:solid black 2px;
 }
-
-/* .img-div{
-    width:200px;
-    height:200px;
-    background-color:red;
+.cover-page{
+    width:100%;
+    height:300px;
     display:flex;
-    justify-content: flex-end;
-    padding-top:2em;
-} */
+    justify-content: space-evenly;
+}
+.cover-page div{
+    width:25%;
+    height: 240;
+    border-radius:10px;
+    padding-top:30px;
+}
+.cover-page div img{
+    width:100%;
+    height:230px;
+    border-radius:10px;
+    padding-top: 5px;
+}
+
+
+.web-page{
+    width:100%;
+    height:300px;
+    display:flex;
+    justify-content: space-evenly;
+}
+.web-page div{
+    width:25%;
+    height: 240;
+    border-radius:10px;
+    padding-top:20px;
+
+}
+.web-page div img{
+    width:100%;
+    height:230px;
+    border-radius:10px;
+    padding-top: 15px;
+} 
+
+ 
+
 #contect{
     width:auto;
     height:300px;
     background-color:#a8bfbe;
     background-image:url("images/floral.png");
+    
 }
+
 #contect h2{
-    text-align: center;
     font-size:2.5em;
 
 }
+#social-link{
+    width:100%;
+    height:200px;
+    display:flex;
+    justify-content: center;
+    
+}
 
 button{
-    width:50px;
-    height:50px;
+    width:70px;
+    height:70px;
     border-radius:100%;
-    border:1px solid red;
+    border:1px solid black;
+    font-size:2em;
+    margin:10px;
+
+
+    
+
 }
 #footer{
     width:auto;
